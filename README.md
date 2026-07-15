@@ -1,2 +1,2 @@
 # Strategic-Sensor
-Truthful Kalman Filter supplemental code
+Study case supplemental code
