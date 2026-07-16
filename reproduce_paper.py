@@ -1,20 +1,6 @@
-#!/usr/bin/env python3
 r"""
 reproduce_paper.py
 ==================
-Reproduces every numerical result and all four data figures (Fig1-Fig4) of
-
-  "A nonlinear-residue feedback design rule for robust Kalman filtering
-   with strategically misreported sensor calibration."
-
-It (i) rebuilds the two case studies of Section 7 from their parameters,
-(ii) prints a validation table against the numbers quoted in the paper, and
-(iii) writes Fig1.pdf ... Fig4.pdf (the four data figures).
-
-  Fig1 : smart-grid   worst-case gain vs residue weight (three design levels)
-  Fig2 : smart-grid   deterrent ratio of four sign-invariant residues
-  Fig3 : cooperative-perception (heterogeneous)  gain vs residue weight
-  Fig4 : cooperative-perception (heterogeneous)  deterrent ratio
 
 Usage
 -----
@@ -22,7 +8,7 @@ Usage
   python3 reproduce_paper.py --sweep    # additionally run the effort-Hessian
                                         # positive-definiteness random sweep
 
-Dependencies: numpy, matplotlib  (scipy is NOT required).
+Dependencies: numpy, matplotlib.
 """
 import argparse
 import numpy as np
